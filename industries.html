@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries | IMAGA EMPIRE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR (fixed, with hamburger) -->
+<nav class="navbar" style="position: fixed; background: #000; z-index: 1000;">
+    <div class="nav-logo">
+        <img src="images/logo.png" alt="Imaga Empire Logo" style="height: 50px;">
+    </div>
+    <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="empire.html">The Empire</a></li>
+        <li><a href="companies.html">Our Companies</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="foundation.html">Foundation</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="newsroom.html">Newsroom</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="partnerships.html">Partnerships</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero" style="margin-top: 80px;">
+    <h1>INDUSTRIES</h1>
+    <p>Where We Operate</p>
+</div>
+
+<!-- INDUSTRIES GRID (enhanced) -->
+<section class="page-section">
+    <div class="industry-enhanced-grid">
+        <div class="industry-card">
+            <i class="fas fa-hospital"></i>
+            <h3>Healthcare & Diagnostics</h3>
+            <p>Medical diagnostics, imaging, laboratory medicine, blood bank, telemedicine, and equipment maintenance.</p>
+        </div>
+        <div class="industry-card">
+            <i class="fas fa-capsules"></i>
+            <h3>Pharmaceuticals</h3>
+            <p>Pharmaceutical manufacturing, biotechnology, retail pharmacies, digital health platforms, and veterinary products.</p>
+        </div>
+        <div class="industry-card">
+            <i class="fas fa-microchip"></i>
+            <h3>Technology & Communications</h3>
+            <p>Software development, telecommunications, media production, event management, and digital innovation.</p>
+        </div>
+        <div class="industry-card">
+            <i class="fas fa-tshirt"></i>
+            <h3>Fashion & Lifestyle</h3>
+            <p>Fashion, apparel, personal care, skincare, branded retail, cafés, travel experiences, and creative events.</p>
+        </div>
+        <div class="industry-card">
+            <i class="fas fa-tractor"></i>
+            <h3>Agribusiness</h3>
+            <p>Edible oils, breakfast cereals, beverages, cosmetics, logistics, and sustainable manufacturing.</p>
+        </div>
+        <div class="industry-card">
+            <i class="fas fa-industry"></i>
+            <h3>Manufacturing</h3>
+            <p>Food processing, pharmaceutical production, consumer goods, and industrial-scale manufacturing.</p>
+        </div>
+        <div class="industry-card">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Community Development</h3>
+            <p>Healthcare outreach, education, youth empowerment, micro-grants, and social impact programs.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <img src="images/logo.png" alt="Imaga Empire">
+    <h3>IMAGA EMPIRE</h3>
+    <p>Sovereignty in Enterprise</p>
+    <p>Building businesses, advancing innovation, and creating lasting impact.</p>
+    <div class="footer-credit">Designed & developed by <a href="#">73 Creations</a></div>
+    <small>© 2025 Imaga Empire. All Rights Reserved.</small>
+</footer>
+
+<!-- STYLES (specific to this page) -->
+<style>
+    .page-hero {
+        background: #000;
+        text-align: center;
+        padding: 100px 20px 60px;
+    }
+    .page-hero h1 {
+        color: #d4af37;
+        font-size: 48px;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+    .page-hero p {
+        color: #aaa;
+        font-size: 18px;
+    }
+    .page-section {
+        padding: 60px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .industry-enhanced-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+    }
+    .industry-card {
+        background: #111;
+        border: 1px solid #222;
+        border-radius: 16px;
+        padding: 30px 20px;
+        transition: 0.3s;
+        text-align: center;
+    }
+    .industry-card:hover {
+        border-color: #d4af37;
+        transform: translateY(-5px);
+    }
+    .industry-card i {
+        font-size: 48px;
+        color: #d4af37;
+        margin-bottom: 15px;
+    }
+    .industry-card h3 {
+        color: #d4af37;
+        margin-bottom: 12px;
+        font-size: 1.5rem;
+    }
+    .industry-card p {
+        color: #ccc;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+    footer {
+        text-align: center;
+        padding: 50px;
+        background: #000;
+        border-top: 1px solid #222;
+    }
+    footer img {
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    footer h3 {
+        color: #d4af37;
+        letter-spacing: 3px;
+    }
+    footer p {
+        color: #aaa;
+        margin-top: 5px;
+    }
+    .footer-credit {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .footer-credit a {
+        color: #d4af37;
+        text-decoration: none;
+    }
+    footer small {
+        display: block;
+        margin-top: 20px;
+        color: #555;
+    }
+    @media (max-width: 768px) {
+        .page-hero h1 { font-size: 36px; }
+        .industry-card { padding: 20px; }
+        .industry-card h3 { font-size: 1.2rem; }
+    }
+</style>
+
+<!-- HAMBURGER MENU SCRIPT (ensures functionality) -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+    });
+</script>
+</body>
+</html>

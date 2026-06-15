@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | IMAGA EMPIRE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR (fixed, with hamburger) -->
+<nav class="navbar" style="position: fixed; background: #000; z-index: 1000;">
+    <div class="nav-logo">
+        <img src="images/logo.png" alt="Imaga Empire Logo" style="height: 50px;">
+    </div>
+    <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="empire.html">The Empire</a></li>
+        <li><a href="companies.html">Our Companies</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="foundation.html">Foundation</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="newsroom.html">Newsroom</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="partnerships.html">Partnerships</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero" style="margin-top: 80px;">
+    <h1>CONTACT US</h1>
+    <p>Let’s build something meaningful together</p>
+</div>
+
+<!-- CONTACT INFO (cards layout) -->
+<section class="page-section">
+    <div class="contact-cards">
+        <div class="contact-card">
+            <i class="fas fa-building"></i>
+            <h3>Headquarters</h3>
+            <p>Lagos, Nigeria</p>
+            <p>+234 (0) 123 456 7890</p>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>General Inquiries</h3>
+            <p><a href="mailto:info@imaga.group">info@imaga.group</a></p>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-handshake"></i>
+            <h3>Partnerships</h3>
+            <p><a href="mailto:partnerships@imaga.group">partnerships@imaga.group</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- DEPARTMENT CONTACTS -->
+<section class="page-section dark">
+    <h2>Contact Departments</h2>
+    <div class="department-grid">
+        <div class="dept-item"><i class="fas fa-newspaper"></i> Media & Press: <a href="mailto:media@imaga.group">media@imaga.group</a></div>
+        <div class="dept-item"><i class="fas fa-chart-line"></i> Investors: <a href="mailto:investors@imaga.group">investors@imaga.group</a></div>
+        <div class="dept-item"><i class="fas fa-heart"></i> Foundation: <a href="mailto:foundation@imaga.group">foundation@imaga.group</a></div>
+        <div class="dept-item"><i class="fas fa-briefcase"></i> Careers: <a href="mailto:careers@imagaempire.com">careers@imagaempire.com</a></div>
+    </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="page-section">
+    <h2>Send a Message</h2>
+    <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        <p id="formStatus" style="margin-top: 15px; color: #d4af37; display: none;"></p>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <img src="images/logo.png" alt="Imaga Empire">
+    <h3>IMAGA EMPIRE</h3>
+    <p>Sovereignty in Enterprise</p>
+    <p>Building businesses, advancing innovation, and creating lasting impact.</p>
+    <div class="footer-credit">Designed & developed by <a href="#">73 Creations</a></div>
+    <small>© 2025 Imaga Empire. All Rights Reserved.</small>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- Additional styles for this page -->
+<style>
+    .page-hero {
+        background: #000;
+        text-align: center;
+        padding: 100px 20px 60px;
+    }
+    .page-hero h1 {
+        color: #d4af37;
+        font-size: 48px;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+    .page-hero p {
+        color: #aaa;
+        font-size: 18px;
+    }
+    .page-section {
+        padding: 60px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .page-section.dark {
+        background: #0a0a0a;
+        width: 100%;
+        max-width: 100%;
+    }
+    .contact-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    .contact-card {
+        background: #111;
+        border: 1px solid #222;
+        border-radius: 16px;
+        padding: 30px;
+        width: 260px;
+        transition: 0.3s;
+    }
+    .contact-card:hover {
+        border-color: #d4af37;
+        transform: translateY(-5px);
+    }
+    .contact-card i {
+        font-size: 40px;
+        color: #d4af37;
+        margin-bottom: 15px;
+    }
+    .contact-card h3 {
+        color: #d4af37;
+        margin-bottom: 15px;
+    }
+    .contact-card p {
+        color: #ccc;
+        line-height: 1.5;
+    }
+    .contact-card a {
+        color: #d4af37;
+        text-decoration: none;
+    }
+    .department-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        max-width: 900px;
+        margin: 30px auto 0;
+    }
+    .dept-item {
+        background: #111;
+        padding: 12px 20px;
+        border-radius: 40px;
+        border: 1px solid #333;
+        color: #ccc;
+    }
+    .dept-item i {
+        color: #d4af37;
+        margin-right: 8px;
+    }
+    .dept-item a {
+        color: #d4af37;
+        text-decoration: none;
+    }
+    .contact-form {
+        max-width: 600px;
+        margin: 30px auto 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .contact-form input, 
+    .contact-form textarea {
+        background: #111;
+        border: 1px solid #333;
+        padding: 14px;
+        color: white;
+        border-radius: 8px;
+        font-family: inherit;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        outline: none;
+        border-color: #d4af37;
+    }
+    .contact-form button {
+        background: #d4af37;
+        border: none;
+        padding: 14px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+    .contact-form button:hover {
+        background: #b8941a;
+    }
+    @media (max-width: 768px) {
+        .page-hero h1 { font-size: 36px; }
+        .contact-card { width: 100%; max-width: 300px; }
+    }
+</style>
+
+<!-- Simple form submission handling (no backend, just demo) -->
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const status = document.getElementById('formStatus');
+        status.style.display = 'block';
+        status.innerHTML = '✓ Message sent! We will get back to you shortly.';
+        this.reset();
+        setTimeout(() => { status.style.display = 'none'; }, 5000);
+    });
+</script>
+</body>
+</html>
