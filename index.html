@@ -6,7 +6,7 @@
     <title>IMAGA EMPIRE | Sovereignty in Enterprise</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo.png">
-    <meta name="description" content="Imaga Empire is a diversified enterprise with interests in healthcare, technology, agribusiness, consumer products, and social impact.">
+    <meta name="description" content="Imaga Empire is a diversified holding company building enduring institutions across healthcare, technology, agribusiness, fashion, and social impact.">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -17,11 +17,14 @@
     <h1>IMAGA</h1>
 </div>
 
-<!-- HERO SECTION with SLIDER -->
-<header class="hero">
+<!-- MAIN CONTENT (hidden until loader finishes) -->
+<div id="main-content" style="display: none;">
+
+    <!-- HAMBURGER MENU & NAVBAR -->
     <nav class="navbar">
         <div class="nav-logo">
             <img src="images/logo.png" alt="Imaga Empire Logo">
+            <span class="empire-name">IMAGA EMPIRE</span>
         </div>
         <div class="hamburger" id="hamburger">
             <span></span><span></span><span></span>
@@ -40,169 +43,165 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <img src="images/logo.png" alt="Imaga Empire Logo" class="hero-logo">
-        <h1>IMAGA EMPIRE</h1>
-        <h2>Sovereignty in Enterprise</h2>
+
+    <!-- HERO SLIDER -->
+    <section class="hero-slider">
+        <div class="slider-container" id="slider">
+            <!-- Images injected by JS -->
+        </div>
+        <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots" id="dots"></div>
+    </section>
+
+    <!-- EMPIRE OVERVIEW -->
+    <section class="overview">
+        <div class="section-title">
+            <span>THE EMPIRE</span>
+            <h2>Building Enduring Institutions</h2>
+        </div>
+        <p>
+            Imaga Empire Limited is a privately held holding company. Our interests span
+            healthcare, pharmaceuticals, diagnostics, technology, agribusiness, manufacturing,
+            fashion, and social impact. Guided by <strong>Sovereignty in Enterprise</strong>,
+            we build institutions that create value, drive innovation, and improve lives.
+        </p>
+    </section>
+
+    <!-- OUR COMPANIES (grid) -->
+    <section class="companies">
+        <div class="section-title">
+            <span>OUR COMPANIES</span>
+            <h2>The Companies Driving Our Vision</h2>
+        </div>
+        <div class="company-grid">
+            <div class="company-card">
+                <img src="images/73-collections-logo.png" alt="73 Collections">
+                <h3>73 Collections</h3>
+                <p class="motto">Embrace the Journey</p>
+                <p>Fashion, apparel, personal care, skincare, branded retail, cafés, travel experiences, and creative events.</p>
+                <a href="73-collections.html" class="card-link">Explore →</a>
+            </div>
+            <div class="company-card">
+                <img src="images/73-creations-logo.png" alt="73 Creations">
+                <h3>73 Creations</h3>
+                <p class="motto">Creating Tomorrow's Digital Solutions</p>
+                <p>Creative agency, software development, telecommunications, media production, event management, and digital innovation.</p>
+                <a href="#" class="card-link">Explore →</a>
+            </div>
+            <div class="company-card">
+                <img src="images/oil-republic-logo.png" alt="Oil Republic">
+                <h3>Oil Republic</h3>
+                <p class="motto">The Republic of Red Gold</p>
+                <p>Agribusiness, edible oils, breakfast cereals, beverages, cosmetics, e‑commerce, logistics, and sustainable manufacturing.</p>
+                <a href="oil-republic.html" class="card-link">Explore →</a>
+            </div>
+            <div class="company-card">
+                <img src="images/accurate-bio-diagnostics-logo.png" alt="AccurateBio Diagnostics">
+                <h3>AccurateBio Diagnostics</h3>
+                <p class="motto">Precision Diagnostics. Better Decisions.</p>
+                <p>Medical diagnostics, imaging, laboratory medicine, blood bank, telemedicine, and equipment maintenance.</p>
+                <a href="#" class="card-link">Explore →</a>
+            </div>
+            <div class="company-card">
+                <img src="images/accurate-bio-pharma-logo.png" alt="AccurateBio Pharmaceuticals">
+                <h3>AccurateBio Pharmaceuticals</h3>
+                <p class="motto">From Discovery to Delivery. Advancing Science. Improving Lives.</p>
+                <p>Pharmaceutical manufacturing, biotechnology, retail pharmacies, digital health platforms, and veterinary products.</p>
+                <a href="#" class="card-link">Explore →</a>
+            </div>
+            <div class="company-card">
+                <img src="images/isaiah-imaga-foundation-logo.png" alt="Isaiah Imaga Foundation">
+                <h3>Isaiah Imaga Foundation</h3>
+                <p class="motto">Inspiring Hope. Transforming Lives.</p>
+                <p>Community development, healthcare outreach, education, youth empowerment, and micro‑grants.</p>
+                <a href="foundation.html" class="card-link">Learn more →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTER SECTION (Homepage) -->
+    <section class="counter-section">
+        <div class="section-title">
+            <span>THE EMPIRE BY NUMBERS</span>
+            <h2>Building Scale, Creating Impact</h2>
+        </div>
+        <div class="counter-grid">
+            <div class="counter-item">
+                <i class="fas fa-industry"></i>
+                <div class="counter-number" data-target="7">0</div>
+                <p>Industry Sectors</p>
+            </div>
+            <div class="counter-item">
+                <i class="fas fa-users"></i>
+                <div class="counter-number" data-target="1250">0</div>
+                <p>Employees</p>
+            </div>
+            <div class="counter-item">
+                <i class="fas fa-building"></i>
+                <div class="counter-number" data-target="12">0</div>
+                <p>Branches & Offices</p>
+            </div>
+            <div class="counter-item">
+                <i class="fas fa-chart-line"></i>
+                <div class="counter-number" data-target="15">0</div>
+                <p>Active Ventures</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANNOUNCEMENTS / PRESS RELEASES -->
+    <section class="announcements">
+        <div class="section-title">
+            <span>NEWSROOM</span>
+            <h2>Latest Announcements</h2>
+        </div>
+        <div class="announcement-grid">
+            <div class="announcement-card">
+                <i class="fas fa-user-graduate"></i>
+                <h3>Founder Joins National Health Fellowship</h3>
+                <p>IU Imaga has been selected for the prestigious National Health Fellowship Program, advancing healthcare innovation across Nigeria.</p>
+                <span class="date">March 2025</span>
+            </div>
+            <div class="announcement-card">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Recruitment Drive Coming Soon</h3>
+                <p>We are hiring: Social Media Manager, Executive Assistant, and Personal Assistant. Applications open April 2025.</p>
+                <span class="date">Opening April 2025</span>
+            </div>
+            <div class="announcement-card">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>Ohafia Medical Outreach Completed</h3>
+                <p>The Isaiah Imaga Foundation successfully rounded up its free healthcare outreach in Ohafia LGA. Scholarships for underprivileged children to commence next quarter.</p>
+                <span class="date">March 2025</span>
+            </div>
+            <div class="announcement-card">
+                <i class="fas fa-hospital-user"></i>
+                <h3>Engagement with Health Ministry</h3>
+                <p>The founder is currently meeting with the Ministry of Health to strengthen the Empire's healthcare delivery and pharmaceutical impact.</p>
+                <span class="date">Ongoing</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTNERSHIPS -->
+    <section class="partnerships">
+        <h2>Let's Build Something Meaningful Together</h2>
+        <p>We welcome partnerships with businesses, governments, investors, NGOs and institutions.</p>
+        <a href="contact.html" class="btn-gold">Partner With Us →</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="images/logo.png" alt="Imaga Empire">
+        <h3>IMAGA EMPIRE</h3>
+        <p>Sovereignty in Enterprise</p>
         <p>Building businesses, advancing innovation, and creating lasting impact.</p>
-        <div class="hero-buttons">
-            <a href="empire.html" class="btn-gold">Explore the Empire</a>
-            <a href="companies.html" class="btn-outline">Our Companies</a>
-        </div>
-    </div>
-    <!-- Slider controls -->
-    <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
-    <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
-    <div class="slider-dots" id="sliderDots"></div>
-</header>
+        <div class="footer-credit">Designed & developed by <a href="#">73 Creations</a></div>
+        <small>© 2025 Imaga Empire. All Rights Reserved.</small>
+    </footer>
 
-<!-- EMPIRE OVERVIEW -->
-<section class="overview">
-    <div class="section-title">
-        <span>THE EMPIRE</span>
-        <h2>Building Enduring Institutions</h2>
-    </div>
-    <p>
-        Imaga Empire Limited is a privately held holding company. Our interests span
-        healthcare, pharmaceuticals, diagnostics, technology, agribusiness, manufacturing,
-        fashion, and social impact. Guided by our philosophy of <strong>Sovereignty in Enterprise</strong>,
-        we build institutions that create value, drive innovation, and improve lives.
-    </p>
-</section>
-
-<!-- OUR COMPANIES (grid) -->
-<section class="companies">
-    <div class="section-title">
-        <span>OUR COMPANIES</span>
-        <h2>The Companies Driving Our Vision</h2>
-    </div>
-    <div class="company-grid">
-        <div class="company-card">
-            <img src="images/73-collections-logo.png" alt="73 Collections">
-            <h3>73 Collections</h3>
-            <p class="motto">Embrace the Journey</p>
-            <p>Fashion, apparel, personal care, skincare, branded retail, cafés, travel experiences, and creative events.</p>
-            <a href="73-collections.html" class="card-link">Explore →</a>
-        </div>
-        <div class="company-card">
-            <img src="images/73-creations-logo.png" alt="73 Creations">
-            <h3>73 Creations</h3>
-            <p class="motto">Creating Tomorrow's Digital Solutions</p>
-            <p>Creative agency, software development, telecommunications, media production, event management, and digital innovation.</p>
-            <a href="#" class="card-link">Explore →</a>
-        </div>
-        <div class="company-card">
-            <img src="images/oil-republic-logo.png" alt="Oil Republic">
-            <h3>Oil Republic</h3>
-            <p class="motto">The Republic of Red Gold</p>
-            <p>Agribusiness, edible oils, breakfast cereals, beverages, cosmetics, e‑commerce, logistics, and sustainable manufacturing.</p>
-            <a href="oil-republic.html" class="card-link">Explore →</a>
-        </div>
-        <div class="company-card">
-            <img src="images/accurate-bio-diagnostics-logo.png" alt="AccurateBio Diagnostics">
-            <h3>AccurateBio Diagnostics</h3>
-            <p class="motto">Precision Diagnostics. Better Decisions.</p>
-            <p>Medical diagnostics, imaging, laboratory medicine, blood bank, telemedicine, and equipment maintenance.</p>
-            <a href="#" class="card-link">Explore →</a>
-        </div>
-        <div class="company-card">
-            <img src="images/accurate-bio-pharma-logo.png" alt="AccurateBio Pharmaceuticals">
-            <h3>AccurateBio Pharmaceuticals</h3>
-            <p class="motto">From Discovery to Delivery. Advancing Science. Improving Lives.</p>
-            <p>Pharmaceutical manufacturing, biotechnology, retail pharmacies, digital health platforms, and veterinary products.</p>
-            <a href="#" class="card-link">Explore →</a>
-        </div>
-        <div class="company-card">
-            <img src="images/isaiah-imaga-foundation-logo.png" alt="Isaiah Imaga Foundation">
-            <h3>Isaiah Imaga Foundation</h3>
-            <p class="motto">Inspiring Hope. Transforming Lives.</p>
-            <p>Community development, healthcare outreach, education, youth empowerment, and micro‑grants.</p>
-            <a href="foundation.html" class="card-link">Learn more →</a>
-        </div>
-    </div>
-</section>
-
-<!-- COUNTER SECTION (Homepage) -->
-<section class="counter-section">
-    <div class="section-title">
-        <span>THE EMPIRE BY NUMBERS</span>
-        <h2>Building Scale, Creating Impact</h2>
-    </div>
-    <div class="counter-grid">
-        <div class="counter-item">
-            <i class="fas fa-industry"></i>
-            <div class="counter-number" data-target="7">0</div>
-            <p>Industry Sectors</p>
-        </div>
-        <div class="counter-item">
-            <i class="fas fa-users"></i>
-            <div class="counter-number" data-target="1250">0</div>
-            <p>Employees</p>
-        </div>
-        <div class="counter-item">
-            <i class="fas fa-building"></i>
-            <div class="counter-number" data-target="12">0</div>
-            <p>Branches & Offices</p>
-        </div>
-        <div class="counter-item">
-            <i class="fas fa-chart-line"></i>
-            <div class="counter-number" data-target="15">0</div>
-            <p>Active Ventures</p>
-        </div>
-    </div>
-</section>
-
-<!-- ANNOUNCEMENTS / PRESS RELEASES -->
-<section class="announcements">
-    <div class="section-title">
-        <span>NEWSROOM</span>
-        <h2>Latest Announcements</h2>
-    </div>
-    <div class="announcement-grid">
-        <div class="announcement-card">
-            <i class="fas fa-user-graduate"></i>
-            <h3>Founder Joins National Health Fellowship</h3>
-            <p>Isaiah U. Imaga has been selected for the prestigious National Health Fellowship Program, advancing healthcare innovation across Nigeria.</p>
-            <span class="date">March 2025</span>
-        </div>
-        <div class="announcement-card">
-            <i class="fas fa-bullhorn"></i>
-            <h3>Recruitment Drive Coming Soon</h3>
-            <p>We are hiring: Social Media Manager, Executive Assistant, and Personal Assistant. Applications open April 2025.</p>
-            <span class="date">Opening April 2025</span>
-        </div>
-        <div class="announcement-card">
-            <i class="fas fa-hand-holding-heart"></i>
-            <h3>Ohafia Medical Outreach Completed</h3>
-            <p>The Isaiah Imaga Foundation successfully rounded up its free healthcare outreach in Ohafia LGA. Scholarships for underprivileged children to commence next quarter.</p>
-            <span class="date">March 2025</span>
-        </div>
-        <div class="announcement-card">
-            <i class="fas fa-hospital-user"></i>
-            <h3>Engagement with Health Ministry</h3>
-            <p>The founder is currently meeting with the Ministry of Health to strengthen the Empire's healthcare delivery and pharmaceutical impact.</p>
-            <span class="date">Ongoing</span>
-        </div>
-    </div>
-</section>
-
-<!-- PARTNERSHIPS -->
-<section class="partnerships">
-    <h2>Let's Build Something Meaningful Together</h2>
-    <p>We welcome partnerships with businesses, governments, investors, NGOs and institutions.</p>
-    <a href="contact.html" class="btn-gold">Partner With Us →</a>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <img src="images/logo.png" alt="Imaga Empire">
-    <h3>IMAGA EMPIRE</h3>
-    <p>Sovereignty in Enterprise</p>
-    <p>Building businesses, advancing innovation, and creating lasting impact.</p>
-    <div class="footer-credit">Designed & developed by <a href="#">73 Creations</a></div>
-    <small>© 2025 Imaga Empire. All Rights Reserved.</small>
-</footer>
+</div> <!-- end main-content -->
 
 <script src="script.js"></script>
 </body>
